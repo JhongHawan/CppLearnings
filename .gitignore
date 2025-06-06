@@ -250,3 +250,6 @@ AkavacheSqliteLinkerOverride.cs
 NuGetBuild
 WiX.Toolset.DummyFile.txt
 GitHubVS.sln.DotSettings
+
+# File named 0 shows up sometimes
+0
