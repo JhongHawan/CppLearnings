@@ -2,7 +2,35 @@
 // Using the std namespace to save time but really you should be using more specific namespace
 using namespace std; 
 
+// Function declaration goes before main 
+void loops();
 float sum(float a, float b);
+
+/// <summary>
+/// Summary comments work the same as C#
+/// main() has to be declared after the function declarations above because the C++ compiler
+/// works from top to bottom when figuring out functions. So after function declarations or
+/// after the function implementations but putting it after implementations is a chore and doesn't
+/// make much sense.
+/// </summary>
+int main()
+{
+    //loops();
+    // Double is allowed here instead of float and it's interpreted but this 
+    // throws a warning so it's better to be explicit. ints are okay though.
+    cout << sum(2.2, 5) << endl;
+    cout << sum(2.2f, 5) << endl;
+    cout << sum(5.2f, 3) << endl;
+    cout << sum(4, 8) << endl;
+
+    // This command gets rid of the directory and other junk info when running the
+    // standard output above.
+    system("pause>0");
+}
+
+float sum(float a, float b) {
+    return a + b;
+}
 
 void loops() {
 
@@ -100,22 +128,3 @@ void types() {
 }
 
 #pragma endregion
-
-/// <summary>
-/// Summary comments work the same as C#
-/// main() has to be declared at the end of the file because the C++ compiler
-/// works from top to bottom when figuring out functions
-/// </summary>
-int main()
-{
-    loops();
-    sum(2.2, 5);
-
-    // This command gets rid of the directory and other junk info when running the
-    // standard output above.
-    system("pause>0");
-}
-
-float sum(float a, float b) {
-    return a + b;
-}
