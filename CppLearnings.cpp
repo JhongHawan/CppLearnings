@@ -1,20 +1,15 @@
-// CppLearnings.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+// Using the std namespace to save time but really you should be using more specific namespace
+using namespace std; 
 
 int main()
 {
     std::cout << "Hello World!\n";
+    // std is a namespace to be able to run the cout command 
+    // and others.
+    std::cout << "Welcome to the C++ Crash Course\n";
+
+    // This command gets rid of the directory and other junk info when running the
+    // standard output above.
+    system("pause>0");
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
