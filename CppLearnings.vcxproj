@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="CppCrashCourse.cpp" />
     <ClCompile Include="CppLearnings.cpp" />
+    <ClCompile Include="YoutubeChannel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />

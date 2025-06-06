@@ -21,6 +21,9 @@
     <ClCompile Include="CppCrashCourse.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="YoutubeChannel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
