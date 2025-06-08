@@ -36,6 +36,16 @@ int function()
 	return 0;
 }
 
+void printNumber(int* numberPtr) {
+	cout << *numberPtr << endl;
+}
+
+void print(void* ptr, char type) {
+	switch (type) {
+		case 'i':cout << ((int*)ptr) << endl; // handle int*
+		case 'c':cout << ((char*)ptr) << endl; // handle char*
+	}
+}
 
 /// <summary>
 /// Void pointers are a special type of pointer that can hold the address of any variable type.
@@ -43,5 +53,41 @@ int function()
 /// </summary>
 int voidPointers() 
 {
+	int number = 5;
+	char letter = 'a';
+	print(&number, 'i');
+	print(&letter, 'c');
+}
 
+void arraysAndPointers() {
+	int luckyNumbers[5] = { 2, 3, 5, 7, 9 };
+	
+	// This will print the address of the first element in the array
+	cout << luckyNumbers << endl;
+	// This will print the same as above, they're equivalent.
+	cout << &luckyNumbers[0] << endl;
+	// This actually prints the element value at index 5
+	cout << luckyNumbers[2] << endl;
+	// Dereference this after incrementing the address by 2. This is equivalent to the above.
+	cout << *(luckyNumbers + 2) << endl;
+
+
+	int num[5];
+
+	for (int i = 0; i <= 4; i++) {
+		cout << "Number: ";
+		cin >> luckyNumbers[i];
+	}
+}
+
+/// <summary>
+/// Practice returning multiple values with poointers
+/// </summary>
+void getMinAndMax(int numbers[], int size, int* min, int* max) {
+	for (int i = 1; i < size; i++) {
+		if (numbers[i] > *max)
+			*max = numbers[i];
+		if (numbers[i] < *min)
+			*min = numbers[i];
+	}
 }
